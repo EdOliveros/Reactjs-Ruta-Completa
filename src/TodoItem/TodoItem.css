@@ -1,0 +1,54 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 280px;
+    margin-top: 10px;
+}
+.chulito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #776ba2;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #b6b5ee;
+}
+.chulito:hover {
+    cursor: pointer;
+    background-color: rgb(132, 116, 163);
+}
+.item-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 87%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #776ba2;
+    border-radius: 15px;
+    padding: 0 10px 0;
+    background-color: #b6b5ee;
+}
+.item-text:hover{
+    cursor: pointer;
+}
+.chuliado {
+    color: green;
+}
+.completado {
+    text-decoration:line-through;
+    color: #234523;
+}
+.eliminar:hover {
+    color: rgb(121, 89, 144);
+    cursor: pointer;
+}
+.inactive {
+    display: none;
+}
