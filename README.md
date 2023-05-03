@@ -21,23 +21,23 @@ Para cambiar a una rama específica en el repositorio, puedes utilizar el comand
 
 ### Fundamentos de React.js (Básico)
 
-- [Curso de React.js](link) - 9 horas de contenido, 16 horas de práctica
-- [Curso de React.js: Patrones de Render y Composición](link) - 3 horas de contenido, 12 horas de práctica
-- [Curso de React.js: Manejo Profesional del Estado](link) - 4 horas de contenido, 12 horas de práctica
-- [Curso de React.js: Navegación con React Router](link) - 5 horas de contenido, 10 horas de práctica
-- [Curso de Webpack](link) - 3 horas de contenido, 14 horas de práctica
+- [Curso de React.js](https://platzi.com/clases/7395-react/62326-que-necesitas-para-aprender-reactjs/) - 9 horas de contenido, 16 horas de práctica
+- [Curso de React.js: Patrones de Render y Composición](https://platzi.com/clases/2457-react-patrones-render/40851-que-son-los-patrones-de-render/) - 3 horas de contenido, 12 horas de práctica
+- [Curso de React.js: Manejo Profesional del Estado](https://platzi.com/clases/2597-react-estado/43688-dime-como-manejas-el-estado-y-te-dire/) - 4 horas de contenido, 12 horas de práctica
+- [Curso de React.js: Navegación con React Router](https://platzi.com/clases/3468-react-router/51613-cuando-necesitas-react-router/) - 5 horas de contenido, 10 horas de práctica
+- [Curso de Webpack](https://platzi.com/clases/2242-webpack/36183-tu-primer-build-con-webpack/) - 3 horas de contenido, 14 horas de práctica
 
 ### Proyectos profesionales con React.js (Avanzado)
 
-- [Curso de State Machines en React.js](link) - 2 horas de contenido, 8 horas de práctica
-- [Curso Profesional de React.js y Redux](link) - 3 horas de contenido, 18 horas de práctica
-- [Curso de React.js con TypeScript](link) - 2 horas de contenido, 10 horas de práctica
-- [Curso de Server Side Render o SSR con React.js](link) - 3 horas de contenido, 6 horas de práctica
-- [Curso de Introducción a Librerías UI con React](link) - 1 horas de contenido, 8 horas de práctica
-- [Curso Fundamental de Material UI con React](link) - 3 horas de contenido, 8 horas de práctica
-- [Curso de Creación de Librerías UI para React](link) - 3 horas de contenido, 12 horas de práctica
-- [Curso Profesional de React Hooks](link) - 6 horas de contenido, 20 horas de práctica
-- [Curso de React Avanzado](link) - 6 horas de contenido, 18 horas de práctica
+- [Curso de State Machines en React.js](https://platzi.com/clases/3108-react-state-machines/49388-que-son-las-maquinas-de-estado-en-reactjs/) - 2 horas de contenido, 8 horas de práctica
+- [Curso Profesional de React.js y Redux](https://platzi.com/clases/3219-react-redux-profesional/51177-ya-tomaste-el-curso-basico-de-redux/) - 3 horas de contenido, 18 horas de práctica
+- [Curso de React.js con TypeScript](https://platzi.com/clases/5481-react-typescript/57804-el-presente-del-frontend-es-typescript/) - 2 horas de contenido, 10 horas de práctica
+- [Curso de Server Side Render o SSR con React.js](https://platzi.com/clases/6241-react-ssr/59506-por-que-necesito-aprender-sobre-ssr/) - 3 horas de contenido, 6 horas de práctica
+- [Curso de Introducción a Librerías UI con React](https://platzi.com/clases/3168-librerias-react/49989-bienvenida-al-curso/) - 1 horas de contenido, 8 horas de práctica
+- [Curso Fundamental de Material UI con React](https://platzi.com/clases/3078-material-ui/49000-bienvenida-al-curso/) - 3 horas de contenido, 8 horas de práctica
+- [Curso de Creación de Librerías UI para React](https://platzi.com/clases/3138-creacion-librerias-ui/49480-bienvenida-al-curso/) - 3 horas de contenido, 12 horas de práctica
+- [Curso Profesional de React Hooks](https://platzi.com/clases/2118-react-hooks/33466-que-aprenderas-en-el-curso-profesional-de-react-ho/) - 6 horas de contenido, 20 horas de práctica
+- [Curso de React Avanzado](https://platzi.com/clases/1601-react-avanzado/21253-bienvenida-al-curso-y-prerrequisitos/) - 6 horas de contenido, 18 horas de práctica
 
 Los cursos son impartidos por los siguientes instructores:
 - Miguel Ángel Durán
