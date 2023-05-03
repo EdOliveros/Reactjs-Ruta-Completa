@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Frontend con React.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+En esta ruta de aprendizaje podrás especializarte en React.js, la herramienta más demandada y en mayor crecimiento de JavaScript para desarrollo frontend.
 
-## Available Scripts
+## Ramas del Repositorio
 
-In the project directory, you can run:
+Cada uno de los cursos de la ruta está representado por una rama separada en el repositorio. Esto significa que puedes navegar fácilmente por las diferentes ramas del repositorio para acceder al código fuente correspondiente a cada curso. Esto también te permitirá seguir el progreso de tu aprendizaje, ya que puedes avanzar a través de cada curso en orden y ver cómo el código evoluciona a medida que adquieres nuevas habilidades.
 
-### `npm start`
+Para cambiar a una rama específica en el repositorio, puedes utilizar el comando `git checkout` seguido del nombre de la rama. Por ejemplo, si deseas acceder al código del curso "Curso de React.js: Manejo Profesional del Estado", puedes ejecutar el siguiente comando:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## ¿Qué necesitas para aprender React.js?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Conocimientos básicos de HTML, CSS y JavaScript.
+- Un buen editor de código como Visual Studio Code o Sublime Text.
+- Un terminal o línea de comandos para instalar dependencias y ejecutar comandos.
+- Acceso a internet para descargar paquetes y recursos necesarios.
 
-### `npm run build`
+## Cursos incluidos en la ruta
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Fundamentos de React.js (Básico)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Curso de React.js](link) - 9 horas de contenido, 16 horas de práctica
+- [Curso de React.js: Patrones de Render y Composición](link) - 3 horas de contenido, 12 horas de práctica
+- [Curso de React.js: Manejo Profesional del Estado](link) - 4 horas de contenido, 12 horas de práctica
+- [Curso de React.js: Navegación con React Router](link) - 5 horas de contenido, 10 horas de práctica
+- [Curso de Webpack](link) - 3 horas de contenido, 14 horas de práctica
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Proyectos profesionales con React.js (Avanzado)
 
-### `npm run eject`
+- [Curso de State Machines en React.js](link) - 2 horas de contenido, 8 horas de práctica
+- [Curso Profesional de React.js y Redux](link) - 3 horas de contenido, 18 horas de práctica
+- [Curso de React.js con TypeScript](link) - 2 horas de contenido, 10 horas de práctica
+- [Curso de Server Side Render o SSR con React.js](link) - 3 horas de contenido, 6 horas de práctica
+- [Curso de Introducción a Librerías UI con React](link) - 1 horas de contenido, 8 horas de práctica
+- [Curso Fundamental de Material UI con React](link) - 3 horas de contenido, 8 horas de práctica
+- [Curso de Creación de Librerías UI para React](link) - 3 horas de contenido, 12 horas de práctica
+- [Curso Profesional de React Hooks](link) - 6 horas de contenido, 20 horas de práctica
+- [Curso de React Avanzado](link) - 6 horas de contenido, 18 horas de práctica
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Los cursos son impartidos por los siguientes instructores:
+- Miguel Ángel Durán
+- Estefany Aguilar
+- Oscar Barajas Tavares
+- Jonathan Alvarez
+- Juan David Castro Gallego
+- Enrique Devars
+- Estefany Salas
+- Mariangélica Useche
+- Daniel Rodrigo Valdivieso
