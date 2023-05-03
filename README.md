@@ -4,11 +4,10 @@ En esta ruta de aprendizaje podrás especializarte en React.js, la herramienta m
 
 ## Ramas del Repositorio
 
-Cada uno de los cursos de la ruta está representado por una rama separada en el repositorio. Esto significa que puedes navegar fácilmente por las diferentes ramas del repositorio para acceder al código fuente correspondiente a cada curso. Esto también te permitirá seguir el progreso de tu aprendizaje, ya que puedes avanzar a través de cada curso en orden y ver cómo el código evoluciona a medida que adquieres nuevas habilidades.
+Todos los resultados de mis estudios de la ruta completa Reactjs en platzi se encuentra o se iran subiendo a este repositorio.
+Cada uno de los cursos de la ruta está representado por una rama separada en el repositorio. Esto significa que puedes navegar fácilmente por las diferentes ramas del repositorio para acceder al código fuente correspondiente a cada archivo de cada curso. 
 
 Para cambiar a una rama específica en el repositorio, puedes utilizar el comando `git checkout` seguido del nombre de la rama. Por ejemplo, si deseas acceder al código del curso "Curso de React.js: Manejo Profesional del Estado", puedes ejecutar el siguiente comando:
-
-
 
 ## ¿Qué necesitas para aprender React.js?
 
