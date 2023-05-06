@@ -34,13 +34,20 @@ const defaultTodos = [
 ];
 
 function App() {
+
+  const [searchValue, setSearchValue] = React.useState('');
+  console.log('los usuarios buscan todos de ' + searchValue)
+
   return (
     <>
       <div className='mobile-container' >
         <TodoHero/>
         <div className='mobile' >
         <TodoCounter completed={16} total={25} />
-        <TodoSearch />
+        <TodoSearch  
+          searchValue={searchValue}
+          setSearchValue={setSearchValue}
+        />
 
         <TodoList>
           { defaultTodos.map(todo => (
