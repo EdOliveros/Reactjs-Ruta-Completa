@@ -1,0 +1,35 @@
+li {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid grey;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+li p {
+  font-size: 15px;
+}
+.edit-container {
+  display: flex;
+  justify-content: space-between;
+  width: 30px;
+}
+.icon-check {
+  color: rgb(86, 197, 86);
+}
+.p-check {
+  text-decoration: line-through;
+}
+.terminado:hover {
+  color: rgb(28, 102, 28);
+  cursor: pointer;
+  font-size: 28px;
+}
+.eliminar:hover {
+  color: rgb(102, 31, 28);
+  cursor: pointer;
+  font-size: 28px;
+}

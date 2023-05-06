@@ -1,9 +1,9 @@
-import './App.css';
 import { TodoCounter } from './TodoCounter';
 import { TodoSearch } from './TodoSearch';
 import { TodoList } from './TodoList';
 import { TodoItem } from './TodoItem';
 import { CreateTodoButton } from './CreteTodoButton';
+import { TodoHero } from './TodoHero'
 import React from 'react';
 
 const defaultTodos = [
@@ -23,26 +23,38 @@ const defaultTodos = [
     text: 'Pelar la papa',
     completed: true
   },
-  
+  {
+    text: 'Pelar la piña',
+    completed: true
+  },
+  {
+    text: 'Pelar la papaya',
+    completed: true
+  },
 ];
 
 function App() {
   return (
-    <React.Fragment>
-      <TodoCounter completed={16} total={25} />
-      <TodoSearch />
+    <>
+      <div className='mobile-container' >
+        <TodoHero/>
+        <div className='mobile' >
+        <TodoCounter completed={16} total={25} />
+        <TodoSearch />
 
-      <TodoList>
-        { defaultTodos.map(todo => (
-          <TodoItem 
-          key={todo.text} 
-          text={todo.text}
-          completed={todo.completed} />
-        )) }
-      </TodoList>
+        <TodoList>
+          { defaultTodos.map(todo => (
+            <TodoItem 
+            key={todo.text} 
+            text={todo.text}
+            completed={todo.completed} />
+          )) }
+        </TodoList>
 
-      <CreateTodoButton/>
-    </React.Fragment>  
+        <CreateTodoButton/>
+        </div>
+      </div>
+    </>  
   );
 }
 

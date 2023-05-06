@@ -1,0 +1,23 @@
+ul {
+  width: 320px;
+  height: 330px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 20px 0;
+  overflow-y: scroll;
+  /* ocultar la barra de desplazamiento */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+/* pseudo-elementos para ocultar la barra de desplazamiento en navegadores Webkit */
+ul::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}

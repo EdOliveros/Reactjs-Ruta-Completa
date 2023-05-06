@@ -1,9 +1,13 @@
+import './TodoItem.css'
+
 function  TodoItem(props) {
   return (
     <li>
-      <span>v</span>
-      <p>{ props.text }</p>
-      <span>x</span>
+      <p className={`${props.completed && 'p-check'}`}>{ props.text }</p>
+      <div className='edit-container'>
+        <span className={`terminado ${props.completed && 'icon-check'}`}>v</span>
+        <span className='eliminar'>x</span>
+      </div>
     </li>
   );
 }
