@@ -1,6 +1,4 @@
 import './TodoCounter.css';
-import img from './logo.png'
-
 
 function TodoCounter( { total, completed } ) {
 
