@@ -1,11 +1,6 @@
-import { TodoCounter } from '../TodoCounter';
-import { TodoSearch } from '../TodoSearch';
-import { TodoList } from '../TodoList';
-import { TodoItem } from '../TodoItem';
-import { CreateTodoButton } from '../createTodoButton';
-import { TodoHero } from '../TodoHero'
-import React from 'react';
 import { useLocalStorage } from './useLocalStorage';
+import { AppUI } from './AppUI';
+import React from 'react';
 
 // const defaultTodos = [
 //   {
@@ -81,33 +76,17 @@ function App() {
   }
 
   return (
-    <>
-      <div className='mobile-container' >
-        <TodoHero/>
-        <div className='mobile' >
-        <TodoCounter completed={completedTodos} total={totalTodos} />
-        <TodoSearch  
-          searchValue={searchValue}
-          setSearchValue={setSearchValue}
-        />
-
-        <TodoList>
-          {
-          searchedTodos.map(todo => (
-            <TodoItem 
-              key={todo.text} 
-              text={todo.text}
-              completed={todo.completed} 
-              onCompleted={() => completeTodo(todo.text)}
-              onDelete={() => deleteTodo(todo.text)}
-            />
-          )) }
-        </TodoList>
-
-        <CreateTodoButton/>
-        </div>
-      </div>
-    </>  
+    <AppUI
+    
+      completedTodos={completedTodos}
+      totalTodos={totalTodos}
+      searchValue={searchValue}
+      setSearchValue={setSearchValue}
+      searchedTodos={searchedTodos}
+      completeTodo={completeTodo}
+      deleteTodo={deleteTodo}
+  
+    />
   );
 }
 
