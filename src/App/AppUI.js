@@ -7,10 +7,13 @@ import { TodoHero } from '../TodoHero'
 import { TodosLoading }  from '../TodosLoading'
 import { TodosError }  from '../TodosError'
 import { TodosEmpty }  from '../TodosEmpty'
+import { Modal } from '../Modal';
 import { TodoContext } from '../TodoContext' 
 import React from 'react';
 
 function AppUI() {
+
+  const { openModal } = React.useContext(TodoContext);
 
   return (
       <>
@@ -50,6 +53,14 @@ function AppUI() {
       </TodoContext.Consumer>
 
       <CreateTodoButton/>
+
+      {
+        openModal && 
+          <Modal>
+            La funcionalidad de agregar todos!
+          </Modal>
+      }
+
       </div>
     </div>
   </>  
