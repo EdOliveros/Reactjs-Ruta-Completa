@@ -4,36 +4,34 @@ import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoItem';
 import { CreateTodoButton } from '../createTodoButton';
 import { TodoHero } from '../TodoHero'
+import { TodosLoading }  from '../TodosLoading'
+import { TodosError }  from '../TodosError'
+import { TodosEmpty }  from '../TodosEmpty'
 
 function AppUI({
-    loading,
-    error,
-    completedTodos,
-    totalTodos,
-    searchValue,
-    setSearchValue,
-    searchedTodos,
-    completeTodo,
-    deleteTodo
+    // loading,
+    // error,
+    // completedTodos,
+    // totalTodos,
+    // searchValue,
+    // setSearchValue,
+    // searchedTodos,
+    // completeTodo,
+    // deleteTodo
 }) {
     return (
         <>
       <div className='mobile-container' >
         <TodoHero/>
         <div className='mobile' >
-        <TodoCounter 
-        completed={completedTodos} 
-        total={totalTodos} />
-        <TodoSearch  
-          searchValue={searchValue}
-          setSearchValue={setSearchValue}
-        />
+        <TodoCounter />
+        <TodoSearch />
 
         <TodoList>
 
-          { loading && <p>Estamos Cargando...</p> }
-          { error && <p>Desesperate, Hubo un error!!</p> }
-          { (!loading && searchedTodos.length === 0) && <p>Agrega un Nuevo ToDo!!</p> }
+          { loading && <TodosLoading /> }
+          { error && <TodosError /> }
+          { (!loading && searchedTodos.length === 0) && <TodosEmpty /> }
 
           {
           searchedTodos.map(todo => (
