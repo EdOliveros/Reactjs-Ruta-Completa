@@ -7,18 +7,9 @@ import { TodoHero } from '../TodoHero'
 import { TodosLoading }  from '../TodosLoading'
 import { TodosError }  from '../TodosError'
 import { TodosEmpty }  from '../TodosEmpty'
+import { TodoContext } from '../TodoContext' 
 
-function AppUI({
-    // loading,
-    // error,
-    // completedTodos,
-    // totalTodos,
-    // searchValue,
-    // setSearchValue,
-    // searchedTodos,
-    // completeTodo,
-    // deleteTodo
-}) {
+function AppUI() {
     return (
         <>
       <div className='mobile-container' >
@@ -27,23 +18,33 @@ function AppUI({
         <TodoCounter />
         <TodoSearch />
 
-        <TodoList>
+        <TodoContext.Consumer>
+          {({
+            loading,
+            error,
+            searchedTodos,
+            completeTodo,
+            deleteTodo
+          }) => (
+            <TodoList>
 
-          { loading && <TodosLoading /> }
-          { error && <TodosError /> }
-          { (!loading && searchedTodos.length === 0) && <TodosEmpty /> }
+              { loading && <TodosLoading /> }
+              { error && <TodosError /> }
+              { (!loading && searchedTodos.length === 0) && <TodosEmpty /> }
 
-          {
-          searchedTodos.map(todo => (
-            <TodoItem 
-              key={todo.text} 
-              text={todo.text}
-              completed={todo.completed} 
-              onCompleted={() => completeTodo(todo.text)}
-              onDelete={() => deleteTodo(todo.text)}
-            />
-          )) }
-        </TodoList>
+              {
+              searchedTodos.map(todo => (
+                <TodoItem 
+                  key={todo.text} 
+                  text={todo.text}
+                  completed={todo.completed} 
+                  onCompleted={() => completeTodo(todo.text)}
+                  onDelete={() => deleteTodo(todo.text)}
+                />
+              )) }
+            </TodoList>
+          )}
+        </TodoContext.Consumer>
 
         <CreateTodoButton/>
         </div>
