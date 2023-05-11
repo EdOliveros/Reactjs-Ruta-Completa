@@ -9,6 +9,7 @@ import { TodosError }  from '../TodosError'
 import { TodosEmpty }  from '../TodosEmpty'
 import { Modal } from '../Modal';
 import { TodoContext } from '../TodoContext' 
+import { ModalInterno } from '../ModalInterno'
 import React from 'react';
 
 function AppUI() {
@@ -57,7 +58,7 @@ function AppUI() {
       {
         openModal && 
           <Modal>
-            La funcionalidad de agregar todos!
+            <ModalInterno />
           </Modal>
       }
 

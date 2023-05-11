@@ -1,4 +1,4 @@
-button {
+#button {
     width: 45px;
     height: 45px;
     border: none;
@@ -13,4 +13,5 @@ button {
     position: relative;
     top: -40px;
     right: -256px;
+    z-index: 3;
 }

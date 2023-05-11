@@ -10,10 +10,12 @@ function CreateTodoButton() {
     } = React.useContext(TodoContext)
 
     return (
-        <button onClick={(event) => {
-            openModal ? 
-            setOpenModal(false) :
-            setOpenModal(true) 
+        <button id='button' onClick={(event) => {
+            // openModal ? 
+            // setOpenModal(false) :
+            // setOpenModal(true) 
+
+            setOpenModal(state => !state)
 
             console.log('escuchando')
         }}>
