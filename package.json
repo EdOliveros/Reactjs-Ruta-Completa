@@ -2,8 +2,8 @@
   "name": "platzi-intro-react-base",
   "version": "0.1.0",
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18",
+    "react-dom": "^18",
     "react-icons": "^4.8.0",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
@@ -29,6 +29,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "/home/ed/Documents/Reactjs-Ruta-Completa/build/"
+  }
 }
