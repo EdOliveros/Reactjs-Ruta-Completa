@@ -11,10 +11,17 @@ import { Modal } from '../Modal';
 import { TodoContext } from '../TodoContext' 
 import { ModalInterno } from '../ModalInterno'
 import React from 'react';
+import { TodoHeader } from '../TodoHeader';
 
 function AppUI() {
 
-  const { openModal } = React.useContext(TodoContext);
+  const { 
+    openModal, 
+    completedTodos,
+    totalTodos,
+    searchValue,
+    setSearchValue
+  } = React.useContext(TodoContext);
 
   return (
       <>
@@ -22,8 +29,16 @@ function AppUI() {
       <TodoHero/>
       <div className='mobile' >
 
-      <TodoCounter />
-      <TodoSearch />
+      <TodoHeader>
+        <TodoCounter 
+            completedTodos={completedTodos}
+            totalTodos={totalTodos}
+        />
+        <TodoSearch
+            searchValue={searchValue}
+            setSearchValue={setSearchValue}
+        />
+      </TodoHeader>
 
       <TodoContext.Consumer>
         {({
