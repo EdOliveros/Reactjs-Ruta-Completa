@@ -1,0 +1,35 @@
+.formulario-container {
+    width: 300px;
+    height: 150px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 206, 206);
+}
+.buttons-container {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-cerrar {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 25px;
+    background-color: rgb(81, 98, 107);
+}
+.button-anyadir {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 25px;
+    background-color: rgb(255, 130, 130);
+    color: white;
+}
+.input {
+    padding: 30px;
+}

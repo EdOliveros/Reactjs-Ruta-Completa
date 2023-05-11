@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  height: auto;
+  padding: 50px 20px 30px 30px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.title-container {
+  width: 60%;
+  padding: 10px 0 0 0;
+}
+.title-container h1 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+.title-container p {
+  font-size: 13px;
+  margin: 0;
+  color: rgb(63, 63, 63);
+}
+.img-container {
+  width: 200px;
+  height: 100px;
+  background-image: url(./logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+}
+.fondo {
+  width: 2000px;
+  height: 200px;
+  border-radius: 0 0 50% 50%;
+  background-color: rgb(255, 130, 130);
+  position: absolute;
+  top: -12%;
+  right: -100px;
+  z-index: -9;
+}

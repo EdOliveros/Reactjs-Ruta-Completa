@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Frontend con React.js
 
 En esta ruta de aprendizaje podrás especializarte en React.js, la herramienta más demandada y en mayor crecimiento de JavaScript para desarrollo frontend.
@@ -48,3 +49,14 @@ Los cursos son impartidos por los siguientes instructores:
 - Estefany Salas
 - Mariangélica Useche
 - Daniel Rodrigo Valdivieso
+=======
+# Curso de React.js
+
+Este repositorio contiene los archivos del curso "Curso de React.js" ofrecido por [Platzi](https://platzi.com/cursos/react/).
+
+En este curso aprenderás a crear aplicaciones web interactivas con React.js. Trabajarás con componentes, props, estilos CSS, estados y efectos de React. Implementarás React Context, React Portals y almacenamiento con Local Storage. 
+
+¡Inicia tu carrera profesional como React.js Developer junto al profesor JuanDC!
+
+**Nota:** Este repositorio contiene los archivos del curso, pero no el curso en sí. Si deseas tomar el curso completo, visita [Platzi](https://platzi.com/cursos/react/).
+>>>>>>> Curso-de-React.js
