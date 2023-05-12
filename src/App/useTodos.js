@@ -1,11 +1,7 @@
 import React from "react";
 import { useLocalStorage } from "./useLocalStorage";
 
-const TodoContext = React.createContext()
-
-function TodoProvider({ children }) {
-
-    // Aqui puedo compartir informacion con todos mis componentes
+function useTodos() {
 
     const {
         item: todos, 
@@ -62,28 +58,24 @@ function TodoProvider({ children }) {
       }
 
     return (
-        <TodoContext.Provider
-            value={{
-                loading,
-                error,
-                completedTodos,
-                totalTodos,
-                searchValue,
-                setSearchValue,
-                searchedTodos,
-                completeTodo,
-                deleteTodo,
-                openModal,
-                setOpenModal,
-                addTodo
-            }}
-        >
-            {children}
-        </TodoContext.Provider>
+      {
+        loading,
+        error,
+        completedTodos,
+        totalTodos,
+        searchValue,
+        setSearchValue,
+        searchedTodos,
+        completeTodo,
+        deleteTodo,
+        openModal,
+        setOpenModal,
+        addTodo
+      }
     );
 }
 
-export { TodoContext, TodoProvider }
+export { useTodos }
 
 
 {/* <TodoContext.Provider/>
