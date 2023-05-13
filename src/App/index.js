@@ -12,6 +12,7 @@ import { ModalInterno } from '../ModalInterno';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { TodoHero } from '../TodoHero'
 import { Modal } from '../Modal';
+import { ChangeAlertWhitStorageListener } from '../ChangeAlert';
 
 function App() {
   const {
@@ -27,6 +28,7 @@ function App() {
     searchValue,
     setSearchValue,
     addTodo,
+    sincronizeTodos
   } = useTodos();
   
   return (
@@ -101,6 +103,7 @@ function App() {
       />
       </div>
       </div>
+      <ChangeAlertWhitStorageListener sincronize={sincronizeTodos} />
     </>
   );
 }

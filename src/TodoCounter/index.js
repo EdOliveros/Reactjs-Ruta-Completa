@@ -13,7 +13,7 @@ function TodoCounter({
         </div>
         <div className='title-container'>
           <h1>Hello, Ed!</h1>    
-          <p className={!!loading && 'container--loading' }>
+          <p className={`null ${!!loading && 'container--loading' }`}>
             { completedTodos } de { totalTodos } ToDos Completados!
           </p>
         </div>
