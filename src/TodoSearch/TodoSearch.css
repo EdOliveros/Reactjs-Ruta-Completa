@@ -16,3 +16,7 @@ input:focus {
     box-shadow: none;
     outline-color:  rgb(255, 130, 130);
 }
+
+input:disabled {
+    opacity: 40%; 
+}

@@ -1,10 +1,10 @@
-import { TodoContext } from '../App/useTodos';
 import './TodoSearch.css'
 import React from 'react'
 
 function TodoSearch({
   searchValue, 
-  setSearchValue
+  setSearchValue,
+  loading
 }) {
 
   return (
@@ -15,6 +15,7 @@ function TodoSearch({
       onChange={(event) => {
         setSearchValue(event.target.value);
       }}
+      disabled={loading}
       />
     </div>
   );

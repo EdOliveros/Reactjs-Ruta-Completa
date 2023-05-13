@@ -34,14 +34,16 @@ function App() {
       <div className='mobile-container'>
         <TodoHero/>
         <div className='mobile'>
-      <TodoHeader>
+      <TodoHeader
+        loading={loading}
+      >
         <TodoCounter
           totalTodos={totalTodos}
           completedTodos={completedTodos}
-        />
+          />
         <TodoSearch
           searchValue={searchValue}
-          setSearchValue={setSearchValue}
+          setSearchValue={setSearchValue} 
         />
       </TodoHeader>
 

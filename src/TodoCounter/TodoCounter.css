@@ -39,3 +39,7 @@
   right: -100px;
   z-index: -9;
 }
+
+.container--loading {
+  opacity: 30%;
+}

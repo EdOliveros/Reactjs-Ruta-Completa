@@ -3,7 +3,8 @@ import './TodoCounter.css';
 
 function TodoCounter({
   completedTodos,
-  totalTodos
+  totalTodos,
+  loading
 }) {
   return (
     <>
@@ -12,7 +13,7 @@ function TodoCounter({
         </div>
         <div className='title-container'>
           <h1>Hello, Ed!</h1>    
-          <p>
+          <p className={!!loading && 'container--loading' }>
             { completedTodos } de { totalTodos } ToDos Completados!
           </p>
         </div>
