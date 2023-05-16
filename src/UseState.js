@@ -6,7 +6,9 @@ function UseState({ name }) {
     const [state, setState] = React.useState({
         value: '',
         error: false,
-        loading: false
+        loading: false,
+        deleted: false,
+        confirmed: false,
     })
     console.log(state)
 
@@ -25,7 +27,8 @@ function UseState({ name }) {
                     setState({
                         ...state,
                         loading: false,
-                        error: false
+                        error: false,
+                        confirmed: true,
                     })
                 } else {
                     setState({
@@ -42,40 +45,82 @@ function UseState({ name }) {
         console.log('terminando el efecto')
     }, [state.loading])
 
-    return (
-        <div>
-            <h2>Eliminar { name }</h2>
-            <p>Por favor escribe el codigo de seguridad.</p>
-
-            { state.error && (
-                <p>Error: El codigo es incorrecto !</p>
-            ) }
-
-            { state.loading && (
-                <p>Cargando...</p>
-            ) }
-
-            <input 
-                value={state.value}
-                placeholder="codigo de seguridad" 
-                onChange={(event) => {
-                    setState({
-                        ...state,
-                        value: event.target.value
-                    })
-                    console.log(state.value)
-                }}
-            />
-            <button
-                onClick={() => {
-                    setState({
-                        ...state,
-                        loading: true
-                    })
-                }}
-            >Comprobar</button>
-        </div>
-    );
+    if(!state.deleted && !state.confirmed){
+        return (
+            <div>
+                <h2>Eliminar { name }</h2>
+                <p>Por favor escribe el codigo de seguridad.</p>
+    
+                { state.error && (
+                    <p>Error: El codigo es incorrecto !</p>
+                ) }
+    
+                { state.loading && (
+                    <p>Cargando...</p>
+                ) }
+    
+                <input 
+                    value={state.value}
+                    placeholder="codigo de seguridad" 
+                    onChange={(event) => {
+                        setState({
+                            ...state,
+                            value: event.target.value
+                        })
+                        console.log(state.value)
+                    }}
+                />
+                <button
+                    onClick={() => {
+                        setState({
+                            ...state,
+                            loading: true
+                        })
+                    }}
+                >Comprobar</button>
+            </div>
+        );
+    } else if (state.confirmed && !state.deleted) {
+        return (
+            <>
+                <h2>Eliminar el useState</h2>
+                <p>Seguro que quieres eliminar el useState?</p>
+                <button
+                    onClick={() => {
+                        setState({
+                            ...state,
+                            deleted: true
+                        })
+                    }}
+                >Eliminar</button>
+                <button
+                    onClick={() => {
+                        setState({
+                            ...state,
+                            confirmed: false,
+                            value: '',
+                        })
+                    }}
+                >Regresar</button>
+            </>
+        );
+    } else {
+        return (
+            <>
+                <p>Eliminado con Exito</p>
+                <button
+                    onClick={() => {
+                        setState({
+                            ...state,
+                            confirmed: false,
+                            deleted: false,
+                            value: '',
+                        })
+                    }}
+                >Resetear, volver a empezar</button>
+            </>
+        );
+    }
 }
 
 export { UseState }
