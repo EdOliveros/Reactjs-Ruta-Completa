@@ -8,18 +8,12 @@ function UseState({ name }) {
         error: false,
         loading: false
     })
-
-    // const [ value, setValue ] = React.useState('');
-    // const [ error, setError ] = React.useState(false);
-    // const [ loading, setLoading ] = React.useState(false);
-
     console.log(state)
 
     React.useEffect(() => {
         console.log('empezando el efecto') 
 
         if(!!state.loading) {
-            // setError(false)
             setState({
                 ...state,
                 error: false
@@ -33,15 +27,12 @@ function UseState({ name }) {
                         loading: false,
                         error: false
                     })
-                    // setLoading(false)
                 } else {
                     setState({
                         ...state,
                         loading: false,
                         error: true
                     })
-                    // setLoading(false)
-                    // setError(true)
                 }
     
                 console.log('terminando la validacion')
@@ -72,15 +63,11 @@ function UseState({ name }) {
                         ...state,
                         value: event.target.value
                     })
-                    // setValue(event.target.value)
-                    // setError(false)
                     console.log(state.value)
                 }}
             />
             <button
                 onClick={() => {
-                    // setError(false)
-                    // setLoading(true)
                     setState({
                         ...state,
                         loading: true
