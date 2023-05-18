@@ -5,6 +5,30 @@ const SECURYTY_CODE = 'paradigma'
 function UseReducer({ name }) {
     const [state, dispatch] = React.useReducer(reducer, initialState)
 
+    const onConfirm = () => {
+        dispatch({ type: actionTypes.CONFIRM })
+    }
+
+    const onError = () => {
+        dispatch({ type: actionTypes.ERROR })
+    }
+
+    const onWrite = (newValue) => {
+        dispatch({ type: actionTypes.WRITE })
+    }
+
+    const onCheck = () => {
+        dispatch({ type: actionTypes.CHECK })
+    }
+
+    const onDelete = () => {
+        dispatch({ type: actionTypes.DELETE })
+    }
+
+    const onReset = () => {
+        dispatch({ type: actionTypes.RESET })
+    }
+
     React.useEffect(() => {
         console.log('empezando el efecto') 
 
@@ -13,15 +37,15 @@ function UseReducer({ name }) {
                 console.log('haciendo la validacion')
                 
                 if(state.value === SECURYTY_CODE) {
-                    dispatch({
-                        type: actionTypes.CONFIRM
-                    })
-                    // onConfirm()
+                    // dispatch({
+                    //     type: actionTypes.CONFIRM
+                    // })
+                    onConfirm()
                 } else {
-                    dispatch({
-                        type: actionTypes.ERROR
-                    })
-                    // onError()
+                    // dispatch({
+                    //     type: actionTypes.ERROR
+                    // })
+                    onError()
                 }
     
                 console.log('terminando la validacion')
@@ -49,20 +73,20 @@ function UseReducer({ name }) {
                     value={state.value}
                     placeholder="codigo de seguridad" 
                     onChange={(event) => {
-                        dispatch({
-                            type: actionTypes.WRITE,
-                            payload: event.target.value
-                        })
-                        // onWrite(event.target.value)
+                        // dispatch({
+                        //     type: actionTypes.WRITE,
+                        //     payload: event.target.value
+                        // })
+                        onWrite(event.target.value)
                         console.log(state.value)
                     }}
                 />
                 <button
                     onClick={() => {
-                        dispatch({
-                            type: actionTypes.CHECK
-                        })
-                        // onCheck()
+                        // dispatch({
+                        //     type: actionTypes.CHECK
+                        // })
+                        onCheck()
                     }}
                 >Comprobar</button>
             </div>
@@ -74,18 +98,18 @@ function UseReducer({ name }) {
                 <p>Seguro que quieres eliminar el useState?</p>
                 <button
                     onClick={() => {
-                        dispatch({
-                            type: actionTypes.DELETE
-                        })
-                        // onDelete()
+                        // dispatch({
+                        //     type: actionTypes.DELETE
+                        // })
+                        onDelete()
                     }}
                 >Eliminar</button>
                 <button
                     onClick={() => {
-                        dispatch({
-                            type: actionTypes.RESET
-                        })
-                        // onReset()
+                        // dispatch({
+                        //     type: actionTypes.RESET
+                        // })
+                        onReset()
                     }}
                 >Regresar</button>
             </>
@@ -96,10 +120,10 @@ function UseReducer({ name }) {
                 <p>Eliminado con Exito</p>
                 <button
                     onClick={() => {
-                        dispatch({
-                            type: actionTypes.RESET
-                        })
-                        // onReset()
+                        // dispatch({
+                        //     type: actionTypes.RESET
+                        // })
+                        onReset()
                     }}
                 >Resetear, volver a empezar</button>
             </>
